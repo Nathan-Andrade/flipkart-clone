@@ -4,3 +4,4 @@
 - Dotenv
 - Nodemon
 - Body-parser
+- Bcrypt
