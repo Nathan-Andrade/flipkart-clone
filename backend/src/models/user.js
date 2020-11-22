@@ -4,14 +4,14 @@ const bcrypt = require('bcrypt');
 const userSchema = new mongoose.Schema({
   firstName: {
     type: String,
-    require: true,
+    required: true,
     trim: true,
     min: 3,
     max: 20
   },
   lastName: {
     type: String,
-    require: true,
+    required: true,
     trim: true,
     min: 3,
     max: 20
@@ -53,8 +53,8 @@ userSchema.virtual('fullName').get(function(){
 })
 
 userSchema.methods = {
-  authenticate: function(password){
-    return bcrypt.compareSync(password, this.hash_password);
+  authenticate: async function(password){
+    return await bcrypt.compareSync(password, this.hash_password);
   }
 }
 
