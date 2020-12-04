@@ -6,3 +6,5 @@
 - Body-parser
 - Bcrypt
 - Jsonwebtoken
+- Express-Validator
+- Slugify
