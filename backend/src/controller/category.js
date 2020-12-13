@@ -14,6 +14,8 @@ exports.addCategory = (req, res) => {
     cat.save((error, category) => {
       if(error) return res.status(400).json({ error });
       if(category) {
+
+        const categoryList = createCategories(category);
         return res.status(201).json({ category })
       }
     })
