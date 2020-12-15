@@ -8,3 +8,4 @@
 - Jsonwebtoken
 - Express-Validator
 - Slugify
+- Multer
