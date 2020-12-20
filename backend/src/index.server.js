@@ -14,8 +14,8 @@ const cartRoutes = require('./routes/cart');
 // env
 env.config();
 
-// mongoDb
 
+// mongoDb
 mongoose.connect(
   `mongodb+srv://${process.env.MONGO_DB_USER}:${process.env.MONGO_DB_PASSWORD}@cluster0.vcg4x.mongodb.net/${process.env.MONGO_DB_DATABASE}?retryWrites=true&w=majority`,
  {
