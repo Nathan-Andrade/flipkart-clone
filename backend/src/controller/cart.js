@@ -1,5 +1,6 @@
 const Cart = require('../models/cart');
 
+//adicionar items ao carrinho
 exports.addItemToCart = (req, res) => {
   const cart = new Cart({
     user: req.user._id,
